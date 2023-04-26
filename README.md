@@ -17,25 +17,27 @@ npm run dev
 
 - `usuario`: usuario registrado en la plataforma, todos los campos son obligatorios. Los campos son:
 nombre,apellido,email,contraseña
-FUNCTIONAL REQUIREMENTS:
 
-- The user will be able to register in the application by entering the required data.
+Requerimientos funcionales:
 
-- The email must be unique for each user.
+- El usuario podrá registrarse en la aplicación introduciendo los datos requeridos.
 
-- The user will be able to authenticate to the application using his email and password.
+- El correo electrónico debe ser único para cada usuario.
 
-- If the authentication is valid, the application will return to the user an identifier that will be used to prove his identity to the application when he wants to change/delete his data.
+- El usuario podrá autenticarse en la aplicación utilizando su email y contraseña.
 
-- The user will be able to obtain all his data except his password, using his identifier.
+- Si la autenticación es válida, la aplicación devolverá al usuario un identificador que le servirá para acreditar su identidad ante la aplicación cuando quiera modificar/borrar sus datos.
 
-- The user will be able to update his name and surname, the identifier will be necessary.
+- El usuario podrá obtener todos sus datos, excepto su contraseña, utilizando su identificador.
 
-- The user will be able to update his email, it will be necessary the identifier and the current password.
+- El usuario podrá actualizar su nombre y apellidos, el identificador será necesario.
 
-- The user will be able to update his password, it will be necessary the identifier and the current password.
+- El usuario podrá actualizar su correo electrónico, será necesario el identificador y la contraseña actual.
 
-- The user will be able to delete all his data from the platform, it will be necessary the identifier and the current password.
+- El usuario podrá actualizar su contraseña, será necesario el identificador y la contraseña actual.
+
+- El usuario podrá borrar todos sus datos de la plataforma, será necesario el identificador y la contraseña actual.
+
 
 - solution: to register a user you need his data, for this the endpoint is as follows: http://localhost:8010/user/register, in the body we introduce the data
 
