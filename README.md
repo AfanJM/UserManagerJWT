@@ -43,10 +43,10 @@ nombre,apellido,email,contraseña
 ## POST: http://localhost:8010/user/register
 
 - ejemplo: { "_id": "caa14bd7-5bd3-4903-a3b0-530826f60a04", 
-- "name": "juan sebastian", 
-- "lastname": "afanador mora", 
-- "email": "juan@gmail.com", 
-- "password": "GEge3342gge" (esta contraseña está encriptada)
+ "name": "juan sebastian", 
+ "lastname": "afanador mora", 
+ "email": "juan@gmail.com", 
+ "password": "GEge3342gge" (esta contraseña está encriptada)
 
 } 
 - de esta manera se registra un usuario
@@ -61,7 +61,7 @@ nombre,apellido,email,contraseña
 - para actualizar los datos(nombre y apellidos), para esto necesitas el identificador, nombre y apellidos a cambiar
 
 -  ejemplo: { "nombre": "nuevo nombre", 
--  "apellido": "nuevo apellido" 
+  "apellido": "nuevo apellido" 
 }
 para esto es necesario introducir el identificador como en el paso de vista de perfil.
 
@@ -69,14 +69,14 @@ para esto es necesario introducir el identificador como en el paso de vista de p
 - para actualizar el correo electrónico, necesitará el ID actual, correo electrónico y contraseña.
 
 - ejemplo: { "email": "nuevoemail@gmail.com",
--  "password: "GEge3342gge" 
+  "password: "GEge3342gge" 
 } 
 para esto es necesario introducir el token como en el paso de ver perfil
 
 ## PATCH http://localhost:8010/user/update-password
 - para actualizar contraseña, necesitará el identificador, la nueva contraseña y la antigua contraseña.
 - ejemplo: { "nuevaContraseña": "NewPassword83748", 
--  "oldPassword: "GEge3342gge"
+  "oldPassword: "GEge3342gge"
 }
 obviamente estas contraseñas estarán encriptadas. es necesario introducir el token como en el paso de ver perfil.
 
