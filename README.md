@@ -53,8 +53,9 @@ nombre,apellido,email,contraseña
 
 - ahora viene la parte de login
 
-## GET: http://localhost:8010/user/login, los datos también vendrían en el cuerpo, para esto solo se necesita el email y la contraseña, cuando esto suceda el usuario tendrá su token, este token es necesario para: ver su perfil, cambiar la contraseña y eliminar
-ver perfil: http://localhost:8010/user/profile, para esto solo necesitas el token, ingresa el token en auth->Bearer y automáticamente obtendrás la información de ese usuario.
+## GET: http://localhost:8010/user/login
+- los datos también vendrían en el cuerpo, para esto solo se necesita el email y la contraseña, cuando esto suceda el usuario tendrá su token, este token es necesario para: ver su perfil, cambiar la contraseña y eliminar
+- ver perfil: http://localhost:8010/user/profile para esto solo necesitas el token, ingresa el token en auth->Bearer y automáticamente obtendrás la información de ese usuario.
 
 ## PATCH http://localhost:8010/user/update-data
 - para actualizar los datos(nombre y apellidos), para esto necesitas el identificador, nombre y apellidos a cambiar
