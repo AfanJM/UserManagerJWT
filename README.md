@@ -51,30 +51,35 @@ nombre,apellido,email,contraseña
 } 
 - de esta manera se registra un usuario
 
-now comes the login part
+- ahora viene la parte de login
 
-- GET: http://localhost:8010/user/login, the data would also come in the body, for this you only need the emai and password, when this happens the user will have his token, this token is necessary to: view your profile, change the password and delete
-view profile: http://localhost:8010/user/profile, for this you only need the token, enter the token in auth->Bearer and you will automatically get the information of that user.
+## GET: http://localhost:8010/user/login, los datos también vendrían en el cuerpo, para esto solo se necesita el email y la contraseña, cuando esto suceda el usuario tendrá su token, este token es necesario para: ver su perfil, cambiar la contraseña y eliminar
+ver perfil: http://localhost:8010/user/profile, para esto solo necesitas el token, ingresa el token en auth->Bearer y automáticamente obtendrás la información de ese usuario.
 
-- update data(first name and last name), for this you need the identifier, first name and last name to be changed
+## PATCH http://localhost:8010/user/update-data
+- para actualizar los datos(nombre y apellidos), para esto necesitas el identificador, nombre y apellidos a cambiar
 
-- PATCH http://localhost:8010/user/update-data
-
-- example: { "first name": "new name", "last name": "new last name" } it is necessary to enter the login as in the profile view step.
-
-- update email, you will need the current ID, email and password.
-
-- PATCH http://localhost:8010/user/update-email
-
-- example: { "email": "nuevoemail@gmail.com", "password:"GEge3342gge" } it is necessary to enter the token as in the step of viewing profile
-
-- update password, you will need the identifier, the new password and the old password.
-
-- PATCH http://localhost:8010/user/update-password
-
-- example: { "newPassword": "NewPassword83748", { "oldPassword: "GEge3342gge". obviously these passwords will be encrypted. it is necessary to enter the token as in the profile view step.
-
+-  ejemplo: { "nombre": "nuevo nombre", 
+-  "apellido": "nuevo apellido" 
 }
+para esto es necesario introducir el identificador como en el paso de vista de perfil.
 
-- delete user, you need the token
-- DELETE http://localhost:8010/user/delete if you want to delete a user you only have to enter the identifier and that's it, you are deleting the user.
+## PATCH http://localhost:8010/user/update-email
+- para actualizar el correo electrónico, necesitará el ID actual, correo electrónico y contraseña.
+
+- ejemplo: { "email": "nuevoemail@gmail.com",
+-  "password: "GEge3342gge" 
+} 
+para esto es necesario introducir el token como en el paso de ver perfil
+
+## PATCH http://localhost:8010/user/update-password
+- para actualizar contraseña, necesitará el identificador, la nueva contraseña y la antigua contraseña.
+- ejemplo: { "nuevaContraseña": "NewPassword83748", 
+-  "oldPassword: "GEge3342gge"
+}
+obviamente estas contraseñas estarán encriptadas. es necesario introducir el token como en el paso de ver perfil.
+
+
+## DELETE http://localhost:8010/user/delete 
+- para borrar usuario, necesitas el token
+- si quieres borrar un usuario solo tienes que introducir el identificador y listo, se eliminara el usuario.
