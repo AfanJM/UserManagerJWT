@@ -40,7 +40,7 @@ nombre,apellido,email,contraseña
 
 - solución: para dar de alta un usuario se necesitan sus datos, para ello la ruta (endpoint) es la siguiente: http://localhost:8010/user/register, en el cuerpo introducimos los datos
 
-## POST:
+## POST: http://localhost:8010/user/register
 
 - ejemplo: { "_id": "caa14bd7-5bd3-4903-a3b0-530826f60a04", 
 - "name": "juan sebastian", 
