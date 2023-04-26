@@ -18,7 +18,7 @@ npm run dev
 - `usuario`: usuario registrado en la plataforma, todos los campos son obligatorios. Los campos son:
 nombre,apellido,email,contraseña
 
-Requerimientos funcionales:
+## Requerimientos funcionales:
 
 - El usuario podrá registrarse en la aplicación introduciendo los datos requeridos.
 
@@ -38,12 +38,11 @@ Requerimientos funcionales:
 
 - El usuario podrá borrar todos sus datos de la plataforma, será necesario el identificador y la contraseña actual.
 
+- solución: para dar de alta un usuario se necesitan sus datos, para ello la ruta (endpoint) es la siguiente: http://localhost:8010/user/register, en el cuerpo introducimos los datos
 
-- solution: to register a user you need his data, for this the endpoint is as follows: http://localhost:8010/user/register, in the body we introduce the data
+## POST:
 
-- POST:
-
-- example: { "_id":"caa14bd7-5bd3-4903-a3b0-530826f60a04", "name": "juan sebastian", "lastname": "afanador mora", "email": "juan@gmail.com", "password": "GEge3342gge" (this password is encrypted)
+- ejemplo: { "_id": "caa14bd7-5bd3-4903-a3b0-530826f60a04", "name": "juan sebastian", "lastname": "afanador mora", "email": "juan@gmail.com", "password": "GEge3342gge" (esta contraseña está encriptada)
 
 } this way a user is registered
 
