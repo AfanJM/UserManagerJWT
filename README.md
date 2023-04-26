@@ -1,15 +1,22 @@
-USER MANAGEMENT
+# Gestor de usuarios
+aplicación de gestión de usuarios para una aplicación web. La comunicación con la aplicación se realiza a través de una API REST (HTTP).
 
-- ABSTRACT: user management application for a web app. The communication with the application is through a REST API (HTTP).
+## Instalacion
 
-ENTITIES
+1. Clonar el repositorio:
+git clone https://github.com/AfanJM/UserManagerJWT.git
 
--User: User registered on the platform, all fields are mandatory.
+2. Instalar las dependencias:
+npm install
 
-First name:
-Last name:
-Email:
-Password:
+3. Inicar el servidor:
+npm run dev
+
+
+## Entidades
+
+- `usuario`: usuario registrado en la plataforma, todos los campos son obligatorios. Los campos son:
+nombre,apellido,email,contraseña
 FUNCTIONAL REQUIREMENTS:
 
 - The user will be able to register in the application by entering the required data.
