@@ -48,7 +48,8 @@ nombre,apellido,email,contraseña
 - "email": "juan@gmail.com", 
 - "password": "GEge3342gge" (esta contraseña está encriptada)
 
-} this way a user is registered
+} 
+- de esta manera se registra un usuario
 
 now comes the login part
 
