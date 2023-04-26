@@ -42,7 +42,11 @@ nombre,apellido,email,contraseña
 
 ## POST:
 
-- ejemplo: { "_id": "caa14bd7-5bd3-4903-a3b0-530826f60a04", "name": "juan sebastian", "lastname": "afanador mora", "email": "juan@gmail.com", "password": "GEge3342gge" (esta contraseña está encriptada)
+- ejemplo: { "_id": "caa14bd7-5bd3-4903-a3b0-530826f60a04", 
+- "name": "juan sebastian", 
+- "lastname": "afanador mora", 
+- "email": "juan@gmail.com", 
+- "password": "GEge3342gge" (esta contraseña está encriptada)
 
 } this way a user is registered
 
